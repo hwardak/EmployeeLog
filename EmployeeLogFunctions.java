@@ -21,7 +21,7 @@ public class EmployeeLogFunctions {
 	}
 
 	
-	//Just for the purpose of easy setting up and testing. 
+
 	public void addEmployeeTest(){
 		
 		employee = new Employee();

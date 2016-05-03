@@ -1,9 +1,12 @@
+import java.time.LocalDateTime;
 import java.util.Scanner;
 
 public class EmployeeLogMain {
 
 	Scanner in = new Scanner(System.in);
 	EmployeeLogFunctions functions = new EmployeeLogFunctions();
+	ClockFunctions clock = new ClockFunctions();
+	LocalDateTime time = LocalDateTime.now();
 
 	public EmployeeLogMain() {
 		this.menu();
@@ -13,13 +16,19 @@ public class EmployeeLogMain {
 		int option = 0;
 
 		do{
-
+			time = LocalDateTime.now();
+			System.out.println(time.getHour() +":"+ time.getMinute());
+		
+			
 			System.out.println("Menu...");
 
 			System.out.println("1. Add Employee.");
 			System.out.println("2. Add Employee (Test).");
-			System.out.println("3. Delete Employee."); // To Do
-			System.out.println("4. Print Employee List."); // To Do
+			System.out.println("3. Delete Employee."); 
+			System.out.println("4. Print Employee List."); 
+			System.out.println("");
+			System.out.println("5. Sign-In/Out.");
+			System.out.println("");
 			System.out.println("0. Quit.");
 
 			option = in.nextInt();
