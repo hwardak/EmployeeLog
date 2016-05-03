@@ -9,8 +9,6 @@ public class Employee {
 	private boolean isOn;
 
 	
-	
-	
 	public Employee() {
 
 	}
